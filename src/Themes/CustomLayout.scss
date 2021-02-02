@@ -1,0 +1,48 @@
+@import "./Variant.scss";
+
+.ant-layout {
+    // height: 100vh;
+    #components-layout-demo-custom-trigger {
+        .trigger {
+            font-size: 18px;
+            line-height: 64px;
+            padding: 0 24px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .trigger:hover {
+            color: #1890ff;
+        }
+        .logo {
+            height: 32px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 16px;
+        }
+    }
+    .site-layout {
+        .site-layout-background {
+            background: #fff;
+        }
+    }
+    .content{
+        margin: 0px auto;
+        background: #fff;
+        padding: 40px 60px;
+        box-shadow: 5px 0 3px -3px rgba(0, 0, 0, 0.1), -5px 0 3px -3px rgba(0, 0, 0, 0.1)
+
+    }
+    @media all and (max-width: 768px) {
+        .content{ 
+            padding: 15px;
+        }
+    }
+    .banner {
+        width: 100%;
+        height: 30vw;
+        img {
+            width: 100%;
+            height: 100%
+        }
+    }
+     
+}

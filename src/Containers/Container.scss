@@ -1,0 +1,153 @@
+@import "../Themes/Variant.scss";
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.site-layout {
+    height: auto !important;
+    background-image: url('../Asset/Image/pattern_ bgr_02.png');
+    // background-color: #f8f9fa;
+    .header_menu {
+        height: $heightHeader;
+        padding: 0;
+        position: fixed; 
+        z-index: 1;
+        width: 100%; 
+        background-color: #c1272d;
+        display: flex;
+        justify-content: center;
+        line-height: $heightHeader;
+        // box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+        .menu_content {
+            width: 90%;
+            max-width: $pageWidth;
+            .menu_item {
+                height: $heightHeader;
+                float: left;
+                padding: 0px 15px;
+                background-color: #c1272d;
+                .text_menu {
+                    color: #dadada;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .text_menu:hover {
+                    color: #fefa00;
+                }
+                .text_menu.active {
+                    color: #fefa00;
+                }
+            }
+            .nopading {
+                padding: 0px !important;
+            }
+            .icon {
+                display: none;
+                i {
+                    color: white;
+                    // size: 30px;
+                }
+            }
+                
+        }
+        @media all and (max-width: 768px) {
+            .menu_content {
+                width: 100%;
+                .menu_item:not(:first-child) {
+                    display: none;
+                }
+                .menu_item.icon {
+                    float: left;
+                    display: block;
+                }
+                .menu_item.responsive.icon {
+                    position: absolute;
+                    // left: 5%;
+                    // top: 0;
+                }
+                .menu_item.responsive {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+            }
+            
+        }
+    }
+    .header_mobile {
+        display: none;
+        position: fixed;
+        height: 50px;
+        left: 15%;
+        width: 70%;
+        z-index: 1001;
+        .wrap_menu {
+            height: 100%;
+            display: inline-block;
+            .item {
+                float: left;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                display: flex;
+                padding: 0px 10px;
+                .text_menu {
+                    color: #dadada;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .text_menu:hover {
+                    color: #fefa00;
+                }
+                .text_menu.active {
+                    color: #fefa00;
+                }
+            }
+        }
+    }
+    @media all and (max-width: 768px) {
+        .header_mobile {
+            display: block;
+        }
+    }
+    .page_content {
+        width: 90%;
+        align-self: center;
+        max-width: $pageWidth;
+    }
+    .container_app {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .wrap_footer {
+        // box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        background: #3c709b;
+        .footer {
+            width: 90%;
+            max-width: $pageWidth;
+            padding: 20px 0;
+            margin: auto;
+            p.title{
+                text-align: center;
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            p {
+                text-align: center;
+                color: #ffffff;
+                font-weight: 500;
+            }
+        }
+    }
+    .wrap_page_content {
+        min-height: 280px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: $heightHeader;
+
+    }
+}

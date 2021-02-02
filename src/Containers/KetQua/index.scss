@@ -1,0 +1,29 @@
+@import "../../Themes/Variant.scss";
+.page_ket_qua {
+    width: 100%;
+    font-size: 20px;
+    .no_ket_qua {
+        font-weight: 500;
+        p {
+            text-align: center;
+        }
+        .ky {
+            text-align: right;
+            margin-right: '10%';
+            font-weight: bold;
+        }
+        
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 25%;
+    }
+    .no_boder {
+        border-top-color: #fff;
+        border-left-color: #ffff;
+    }
+    .no_boder_right {
+        border-right-color: #fff;
+    }
+}

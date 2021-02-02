@@ -1,0 +1,3 @@
+const CHANGEURL = 'CHANGEURL';
+
+export { CHANGEURL };
